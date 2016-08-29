@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ <script src="https://code.angularjs.org/1.4.7/angular-route.min.js"> </script>
+    <script src="Controllers/sensors.js"></script>
+    
+</head>
+
+<body ng-app = "main" ng-controller = "mainController">
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    
+                        VENDOR
+                    
+                </li>
+                <li>
+                    <a href="#profile">Profile</a>
+                </li>
+                
+                <li >
+                
+                    <a href="#controller">Controller Information</a>
+                
+                </li>
+                
+                <li>
+                <div id="loadMap">
+                    <a href="#sensor">Sensor Information</a>
+                </div>    
+                </li>
+                <li>
+                    <a href="#billing">Billing Plan Information</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+               
+                     <div ng-view>
+                     
+                     </div>
+<div ng-controller = "add_sensor">                     
+<form name = "studentForm" novalidate>
+<table class="table table-hover">    
+    <tbody>
+      <tr>
+        <td>Enter Controller name</td>
+        <td><input class="form-control" type="text" ng-model="controller_name" placeholder="Enter controller name" required />
+        <span style = "color:red" ng-show = "studentForm.controller_name.$dirty && studentForm.controller_name.$invalid">
+        <span ng-show = "studentForm.controller_name.$error.required">Controller Name is required.</span>
+        
+        </span>
+        </td>
+      </tr>
+      <tr>
+        <td>Enter Location</td>
+        <td><input class="form-control" type="text" ng-model="controller_location" placeholder="Enter controller location" required />
+        <span style = "color:red" ng-show = "studentForm.controller_location.$dirty && studentForm.controller_location.$invalid">
+        <span ng-show = "studentForm.controller_location.$error.required">Location is required.</span>
+        </span>
+        </td>
+      </tr>
+      <tr>
+        <td>Enter Number of Sensors</td>
+        <td><input class="form-control" type="text" ng-model="No_of_sensors" placeholder="Enter number of sensors" required />
+        <span style = "color:red" ng-show = "studentForm.controller_sensors.$dirty && studentForm.controller_sensors.$invalid">
+        <span ng-show = "studentForm.controller_location.$error.required">Location is required.</span>
+        </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </form>
+  <button type="button" ng-click = "save_controller()" class="btn btn-secondary-outline">Save</button>
+  </div>
+ </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="/stylesheets/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/stylesheets/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
+ 

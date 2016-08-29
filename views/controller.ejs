@@ -1,0 +1,31 @@
+<div ng-controller = "add_sensor">
+<button  type="button" ng-click = "add_controller()" class="btn btn-secondary-outline">Add Controller</button>
+<div ng-controller = "add_sensor">
+
+<div id="googleMap" style="width:1000px;height:500px;"> </div>
+</br>
+</br>
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="50%">
+            <thead>
+                <tr>
+                    <th>Controller Id</th>
+                    <th>Controller Name</th>
+                    <th>Location</th>
+                    <th>Number of Sensors</th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="s in controller">
+                    <td>{{s.id}}</td>
+                    <td>{{s.controller_name}}</td>
+                    <td>{{s.location}}</td>
+                    <td>{{s.No_of_sensors}}</td>
+                    <td><button type="button" class="btn btn-primary">Edit</button></td>
+                    
+                    
+                
+                </tr>
+            </tbody>
+         </table>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="no-js is-ie"><![endif]-->
+<!--[if gt IE 8]><!--><html class=no-js><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="BlackTie Free Bootstrap Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    
+
+    <title>Green House Sensing</title>
+    <link rel=stylesheet href="css/signin/main.css">
+    <!--[if lte IE 8]>
+    <link rel=stylesheet href="css/ie.css">
+    <![endif]-->
+        <script src="js/signin/vendor/modernizr.js"></script>
+        <script src="js/signin/vendor/respond.min.js"></script>
+
+        <link href="css/grayscale.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+       
+        <style type="text/css">
+            body {
+            /*width: 1280px;*/
+            height: 750px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="level level-hero hero-home has-hint">
+        
+
+        <div class="hero-overlay visible-lg"></div>
+
+        <video loop id=bg-video class=fullscreen-video>
+            
+            <source src="/images/TIMELAPSE_SUNSET_1.mp4" type="video/mp4">
+
+        </video>
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">
+                      <span class="light">Green House Sensing</span> 
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/SignUp">Register</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="SignIn">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="top-content">            
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Enter Login Details:</h3>                                    
+                                </div>
+                                <div class="form-top-right">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                            </div>
+                            <div class="form-bottom">
+                                <form role="form" action="/userLandingPage" method="post" class="login-form">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-username">Username</label>
+                                        <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-password">Password</label>
+                                        <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
+                                    </div>
+                                    <div class="form-group" style="color:black;">
+                                        &nbsp&nbsp
+                                        User&nbsp<input type="radio" name="Type" value="user" >&nbsp&nbsp&nbsp
+                                        Vendor&nbsp<input type="radio" name="Type" value="vendor">&nbsp&nbsp&nbsp
+                                        Admin&nbsp<input type="radio" name="Type" value="admin">
+                                    </div>
+                                    <button type="submit" class="btn">Sign in!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 social-login">
+                            <h3>...or login with:</h3>
+                            <div class="social-login-buttons">
+                                <a class="btn btn-link-1 btn-link-1-facebook" href="#">
+                                    <i class="fa fa-facebook"></i> Facebook
+                                </a>
+                                <a class="btn btn-link-1 btn-link-1-twitter" href="#">
+                                    <i class="fa fa-twitter"></i> Twitter
+                                </a>
+                                <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+                                    <i class="fa fa-google-plus"></i> Google Plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+   <!--  <div
+    <div class="footer text-center">
+    <p class="fmenu">
+        <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a>
+    </p>
+
+    </div>   -->
+    <footer id="footer" style="background-color:#fff; height:25px">
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-center">
+                        &copy; 2016 GreenHouseSensing <!-- <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/signin/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <script src="js/signin/bootstrap.min.js"></script>
+    <script src="js/signin/dropdown.js"></script>
+    <script src="js/signin/main.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+    <!-- //-end- concat_js -->
+
+
+    
+
+</body>
+</html>
